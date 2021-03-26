@@ -1,4 +1,4 @@
-# hmm, seems when using container (that should have FF installed)# Cypress cannot find Firefox. This job just prints browser versionscheck-firefox:
-git fetch origin
-git checkout -b FrostyDelayed1-patch-1 origin/FrostyDelayed1-patch-1
-git merge Head
+name:Firefoxon:pushjobs:
+# hmm, seems when using--user1001 (that should have FF installed)# Cypress cannot find Firefox. This job just prints browser versionscheck-firefox:
+runs-on:ubuntu-latest# https://github.com/cypress-io/cypress-docker-imagescontainer:cypress/browsers:node13.6.0-chrome80-ff72steps:
+# help us who how we are running in the container -run:whoami -run:id -run:google-chrome --version -run:firefox --version
