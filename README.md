@@ -1,5 +1,4 @@
 name:Firefoxon:pushjobs:
-# hmm, seems when using user (Forks) in container (that should have FF installed)# Cypress can find Firefox. This job just prints browser versionscheck-firefox:
+# hmm, seems when using container (that should have FF installed)# Cypress cannot find Firefox. This job just prints browser versionscheck-firefox:
 runs-on:ubuntu-latest# https://github.com/cypress-io/cypress-docker-imagescontainer:cypress/browsers:node13.6.0-chrome80-ff72steps:
 # help us who how we are running in the container -run:whoami -run:id -run:google-chrome --version -run:firefox --version
-
